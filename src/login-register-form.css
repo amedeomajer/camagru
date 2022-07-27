@@ -1,0 +1,191 @@
+.main-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	/* position: absolute; */
+	/* background-color: black; */
+	min-width: 300px;
+	flex-direction: column;
+}
+
+
+/* CONTAINS BUTTONS AND FORMS */
+
+.login-register {
+	width: 400px;
+	height: fit-content;
+	background-color: #fffcd8;
+	align-self: center;
+	/* border-radius: 28px; */
+	-webkit-box-shadow: 0px 0px 50px 15px rgb(0 0 0 / 65%);
+	box-shadow: 0px 0px 1000px 50px rgb(255 0 153 / 25%);
+	border: #fff591 2px;
+	margin-top: 79px;
+	display: flex;
+	margin-bottom: 40px;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px;
+	min-width: 300px;
+}
+
+
+/* SELECT LOGIN OR REGINSTER BUTTONS */
+
+.select {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	z-index: 1;
+	height: 50px;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-butt {
+	background-color: rgb(255, 100, 211);
+	border: none;
+	height: 40px;
+	width: 80px;
+	cursor: pointer;
+	color: white;
+}
+
+.login-butt:hover {
+	background-color: rgb(255, 180, 234);
+	color: white;
+	/* box-shadow: 20px 20px 0 #ff9cd6, 40px 40px 0 #a3f7bf;
+	-webkit-box-shadow: 20px 20px 0 #ff9cd6, 40px 40px 0 #a3f7bf; */
+
+}
+
+
+/* REGISTER BUTTON */
+
+.register-butt {
+	background-color: rgb(255, 100, 211);
+	border: none;
+	height: 40px;
+	width: 80px;
+	cursor: pointer;
+	color: white;
+	font-size: 15px;
+}
+
+.register-butt:hover {
+	background-color: rgb(255, 180, 234);
+	color: white;
+	/* box-shadow: 20px 20px 0 #ff9cd6, 40px 40px 0 #a3f7bf;
+	-webkit-box-shadow: 20px 20px 0 #ff9cd6, 40px 40px 0 #a3f7bf; */
+}
+
+
+/* LOGIN FORM */
+
+#login-form {
+	background-color: #05dfd7;
+	width: 100%;
+	margin-top: 16px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	font-size: 14;
+	color: white;
+}
+
+h2 {
+	text-shadow: 2px 2px 0 #ff9cd6, 4px 4px 0 #a3f7bf;
+	font-size: 30px;
+}
+
+input:focus {
+	outline: none !important;
+}
+
+input[type="text"] {
+	border: none;
+	border-radius: 0px;
+	color: #ff9cd6;
+}
+
+input[type="Password"] {
+	border: none;
+	border-radius: 0px;
+	color: #ff9cd6;
+}
+
+input[type="Password"] {
+	border: none;
+	border-radius: 0px;
+	color: #ff9cd6;
+}
+
+button[type="submit"] {
+	border: none;
+	border-radius: 0px;
+	width: 59px;
+	height: 20px;
+	color: #01dfd7;
+	background-color: white;
+}
+
+button[type="submit"]:hover {
+	cursor: pointer;
+}
+
+
+/* REGISTER FORM */
+
+#register-form {
+	display: none;
+	background-color: #05dfd7;
+	width: 100%;
+	margin-top: 16px;
+	height: fit-content;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	color: white;
+}
+
+
+/* FORGOT PASSWORD */
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-shadow: 0 4px 0 #ff9cd6, 0 8px 0 #a3f7bf, 0 16px 0 #05dfd7;
+}
+
+
+/* FORGOT PASSWORD FORM */
+
+#reset-password {
+	display: none;
+	background-color: #05dfd7;
+	width: 100%;
+	margin-top: 16px;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	color: white;
+}
+
+#activate-form {
+	display: none;
+	background-color: #05dfd7;
+	width: 100%;
+	margin-top: 16px;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	color: white;
+}

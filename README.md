@@ -1,2 +1,2 @@
 # camagru
-Small social media platform for image sharing with stickers
+camagru will be a website.

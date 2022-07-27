@@ -1,0 +1,149 @@
+@media (max-width: 700px) {
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	#selfie-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 15px;
+		display: none;
+	}
+	#stickers img {
+		width: 300px;
+	}
+	.logo {
+		font-size: 20px;
+	}
+	nav {
+		background-color: #333;
+		overflow: hidden;
+		position: fixed;
+		bottom: 0;
+		width: 100vw;
+		height: 20px;
+		z-index: 1234;
+	}
+	nav img {
+		width: 20px;
+	}
+	#user-name-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	#username-display {
+		color: white;
+		text-shadow: 0px 4px 0 #ff9cd6, 0px 8px 0 #fef591, 0px 16px 0 #fa26a0, 0px 32px 0 #52ff8f;
+		-webkit-text-shadow: 0px 4px 0 #ff9cd6, 0px 8px 0 #fef591;
+		font-weight: bolder;
+		font-family: sans-serif;
+	}
+	.gallery {
+		width: 375px;
+	}
+	table {
+		width: 98%;
+	}
+	tbody {
+		width: 303px;
+	}
+	td {
+		width: 98%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	td img {
+		width: 300px;
+	}
+	#comments-form {
+		width: 98%;
+	}
+	th {
+		width: 98%;
+	}
+	/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤	UPLOAD FILE ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+	#upload-file-container {
+		background-color: transparent;
+		margin-top: 75px;
+		position: relative;
+		width: 80vw;
+		padding: 20px;
+		display: none;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		height: 514px;
+	}
+	#stickers {
+		height: 160px;
+		margin-bottom: 40px;
+	}
+	#stickers-upload-file {
+		width: 82vw;
+		height: 200px;
+		overflow-y: scroll;
+	}
+	#upload-file-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#file-preview {
+		background-color: #ffffff;
+		width: 90vw;
+		max-width: 422px;
+		display: flex;
+		height: 300px;
+		justify-content: center;
+		align-items: center;
+	}
+	#img-file-preview {
+		max-width: 400px;
+		max-height: 300px;
+		/* box-shadow: rgb(240 46 170 / 40%) 5px 5px, rgb(240 46 170 / 30%) 10px 10px, rgb(240 46 170 / 20%) 15px 15px, rgb(240 46 170 / 10%) 20px 20px, rgb(240 46 170 / 5%) 25px 25px; */
+	}
+	input[type="file"]::file-selector-button,
+	input[type="submit"] {
+		color: white;
+		margin-top: 0.5em;
+		border: none;
+		padding: 0.2em 0.4em;
+		background-color: transparent;
+		transition: 1s;
+	}
+	input[type="file"] {
+		color: #ff3dbe;
+		margin-left: 128px;
+		margin-top: 54px;
+	}
+	#view-finder>* {
+		width: 100%;
+	}
+	#camera {
+		width: 300px;
+		height: 225px;
+	}
+	#clear-canavs {
+		width: 28px;
+	}
+	#sticker-preview,
+	#sticker-preview2 {
+		height: 220px;
+	}
+	#stickers-upload-file {
+		width: 82vw;
+		max-width: 420px;
+		height: 200px;
+		overflow-y: scroll;
+	}
+	#clear-canvas {
+		display: block;
+		width: 20px;
+	}
+}

@@ -1,0 +1,128 @@
+.gallery {
+	width: 404px;
+	height: 380px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+tbody {
+	background-color: #fff591;
+	box-shadow: 12px 0px 0 #00ffbe, -12px 0px 0 #ff9cd6;
+	-webkit-box-shadow: 12px 0px 0 #00ffbe, -12px 0px 0 #ff9cd6;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#comments-form {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 400px;
+}
+
+#comments-form input[type="submit"] {
+	color: white;
+	margin-bottom: 10px;
+	border: none;
+	padding: 0.2em 0.4em;
+	background-color: none;
+	transition: 1s;
+	margin-left: 10px;
+}
+
+#comment {
+	font-size: x-small;
+	word-wrap: break-word;
+}
+
+#posted-comment-owner {
+	font-style: italic;
+	color: rgb(47 198 191);
+}
+
+hr {
+	border-top: 1px solid #ff3dbe;
+	width: 362px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar { 
+	width: 4px;
+} 
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #87ffbd;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #ff9cd6;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(47, 198, 191);
+}
+
+#like-button {
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+}
+
+#like-button input[type="submit"] {
+	background-color: transparent;
+	color: transparent;
+	width: 40px;
+	height: 40px;
+	border: none;
+}
+
+#like-button input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+#submit-comment {
+	background-image: url("../img/icons/post-comment.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+}
+
+td img {
+	max-width: 400px;
+}
+
+#delete-picture-button {
+	border-radius: 50%;
+	border: none;
+	background-color: red;
+	color: white;
+	width: 30px;
+	height: 30px;
+}
+
+#like-delete {
+	display: flex;
+	justify-content: space-between;
+}
+
+#comment-content {
+	word-break: break-all;
+}
