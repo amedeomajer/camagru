@@ -73,6 +73,8 @@
 								mail($result['email'], "Password recover", $email_content);
 								echo 'We have sent a recovery email at '. $result["email"] . '.<br>';
 							}
+							if (isset($_GET['login_error']))
+								echo display_login_messages($_GET['login_error']);
 						}
 					?>
 					<label>User Name</label>
@@ -81,10 +83,7 @@
 					<br><input type="Password" name="pass" id="pass" autocomplete="on">
 					<br><input type="submit" name="log" id="log" value="Log In">
 					<br><a class="forgot-password" id="forgot-password" href="#">Forgot Password</a><br>
-					<?php
-						if (isset($_GET['login_error']))
-							echo display_login_messages($_GET['login_error']);
-					?>
+					
 					
 				</form> 
 								<!-- END LOGIN FORM -->
@@ -99,7 +98,8 @@
 					<br><label>E-mail</label>
 					<br><input type="email" name="register-email" id="register-email" required>
 					
-					<br><label>Password</label>
+					<br><label>Password</label><br>
+					<span style="color: #fa26a0;">min 8 characters, at least one uppercase, one lowercase and one number</span>
 					<br><input type="password" name="register-pass" id="register-pass" autocomplete="off">
 					<br><label>Repeat Password</label>
 					<br><input type="Password" name="re-pass" id="re-pass" autocomplete="off">

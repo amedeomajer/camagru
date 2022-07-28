@@ -31,16 +31,6 @@ const stickersPaths = new Array(
 
 
 cameraHideAndShow.addEventListener("click", function() {
-	if (navigator.mediaDevices.getUserMedia) {
-		navigator.mediaDevices
-			.getUserMedia({ video: true })
-			.then(function(stream) {
-				video.srcObject = stream;
-			})
-			.catch(function(err0r) {
-				alert("Can't access webcam!");
-			});
-	}
 	var textareaList = document.getElementsByTagName("textarea");
 	for (var i = 0; i < textareaList.length; i++) {
 		textareaList[i].value = "";
@@ -51,6 +41,16 @@ cameraHideAndShow.addEventListener("click", function() {
 	} else {
 		uploadFileContainer.style.display = "none";
 		selfieContainer.style.display = "flex";
+		if (navigator.mediaDevices.getUserMedia) {
+			navigator.mediaDevices
+				.getUserMedia({ video: true })
+				.then(function(stream) {
+					video.srcObject = stream;
+				})
+				.catch(function(err0r) {
+					alert("Can't access webcam!");
+				});
+		}
 	}
 });
 
